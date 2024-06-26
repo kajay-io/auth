@@ -47,7 +47,7 @@ class TeamService(SQLAlchemyAsyncRepositoryService[Team]):
         """Get all teams for a user."""
         return await self.repository.get_user_teams(*filters, user_id=user_id, **kwargs)
 
-    async def create(
+    async def create( # type: ignore
         self,
         data: Team | dict[str, Any],
         auto_commit: bool | None = None,
@@ -90,7 +90,7 @@ class TeamService(SQLAlchemyAsyncRepositoryService[Team]):
         )
         return data
 
-    async def update(
+    async def update( # type: ignore
         self,
         data: Team | dict[str, Any],
         item_id: Any | None = None,
@@ -137,7 +137,7 @@ class TeamService(SQLAlchemyAsyncRepositoryService[Team]):
             execution_options=execution_options,
         )
 
-    async def to_model(self, data: Team | dict[str, Any], operation: str | None = None) -> Team:
+    async def to_model(self, data: Team | dict[str, Any], operation: str | None = None) -> Team: # type: ignore
         if isinstance(data, dict) and "slug" not in data and operation == "create":
             data["slug"] = await self.repository.get_available_slug(data["name"])
         if isinstance(data, dict) and "slug" not in data and "name" in data and operation == "update":
