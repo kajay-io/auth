@@ -30,7 +30,7 @@ class UserService(SQLAlchemyAsyncRepositoryService[User]):
         self.repository: UserRepository = self.repository_type(**repo_kwargs)
         self.model_type = self.repository.model_type
 
-    async def create(
+    async def create( # type: ignore
         self,
         data: User | dict[str, Any],
         auto_commit: bool | None = None,
@@ -54,7 +54,7 @@ class UserService(SQLAlchemyAsyncRepositoryService[User]):
             execution_options=execution_options,
         )
 
-    async def update(
+    async def update( # type: ignore
         self,
         data: User | dict[str, Any],
         item_id: Any | None = None,
@@ -137,7 +137,7 @@ class UserService(SQLAlchemyAsyncRepositoryService[User]):
         db_obj.hashed_password = await crypt.get_password_hash(data["new_password"])
         await self.repository.update(db_obj)
 
-    async def to_model(self, data: User | dict[str, Any], operation: str | None = None) -> User:
+    async def to_model(self, data: User | dict[str, Any], operation: str | None = None) -> User: # type: ignore
         if isinstance(data, dict) and "password" in data:
             password: bytes | str | None = data.pop("password", None)
             if password is not None:
@@ -155,7 +155,7 @@ class RoleService(SQLAlchemyAsyncRepositoryService[Role]):
         self.repository: RoleRepository = self.repository_type(**repo_kwargs)
         self.model_type = self.repository.model_type
 
-    async def to_model(self, data: Role | dict[str, Any], operation: str | None = None) -> Role:
+    async def to_model(self, data: Role | dict[str, Any], operation: str | None = None) -> Role: # type: ignore
         if isinstance(data, dict) and "slug" not in data and operation == "create":
             data["slug"] = await self.repository.get_available_slug(data["name"])
         if isinstance(data, dict) and "slug" not in data and "name" in data and operation == "update":
