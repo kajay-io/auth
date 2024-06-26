@@ -1,0 +1,2466 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index &#8212; Litestar Fullstack Docs</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="_static/litestar-sphinx-theme.css?v=9e3812bb" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="_static/documentation_options.js?v=938c9ccc"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/litestar-theme.js?v=ab2dcc9e"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+   
+
+<a class="navbar-brand logo" href="https://docs.fullstack.litestar.dev">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.svg" class="logo__image only-light" alt="Litestar Fullstack Docs - Home"/>
+    <script>document.write(`<img src="_static/logo.svg" class="logo__image only-dark" alt="Litestar Fullstack Docs - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+
+
+
+
+    <nav class="hidden lg:flex lg:gap-x-4">
+        
+    
+        
+            <a href="index.html"
+               class="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:!text-litestar-gold select-none cursor-pointer">Documentation</a>
+        
+    
+        
+            
+    <div class="relative">
+        <span type="button"
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:!text-litestar-gold st-dropdown-toggle dropdown-closed select-none cursor-pointer"
+                data-dropdown-state="closed"
+                aria-expanded="false">
+            Community
+            <div class="menu-state-indicator flex">
+                
+    <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+     aria-hidden="true">
+    <path fill-rule="evenodd"
+          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+          clip-rule="evenodd"/>
+</svg>
+
+            </div>
+        </span>
+
+        <div class="
+            absolute -left-8 top-full z-10 mt-3
+            w-max max-w-md
+            overflow-hidden rounded-3xl
+            bg-white shadow-lg dark:!bg-zinc-700 ring-1 ring-gray-900/5
+            hidden
+            st-dropdown-menu">
+            <div class="p-4">
+                
+                    
+    
+        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-zinc-800">
+            <div class="
+            h-11 w-11 flex flex-none items-center justify-center
+            rounded-lg
+            bg-gray-50 group-hover:bg-white dark:bg-zinc-900 dark:group-hover:bg-zinc-700
+            text-gray-600 dark:text-gray-300 group-hover:text-litestar-gold">
+                
+    <svg class="h-6 w-6" fill="none"
+     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"/>
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"/>
+</svg>
+
+            </div>
+            <div class="flex-auto">
+                
+    <a href="contribution-guide.html"
+       class="block font-semibold text-gray-900 dark:text-gray-200 hover:text-litestar-gold dark:hover:text-litestar-gold !no-underline select-none cursor-pointer">
+        Contributing
+        <span class="absolute inset-0"></span>
+    </a>
+
+                <div class="mt-1 text-gray-600 dark:text-gray-300">Learn how to contribute to Litestar Fullstack</div>
+            </div>
+        </div>
+    
+
+                
+                    
+    
+        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-zinc-800">
+            <div class="
+            h-11 w-11 flex flex-none items-center justify-center
+            rounded-lg
+            bg-gray-50 group-hover:bg-white dark:bg-zinc-900 dark:group-hover:bg-zinc-700
+            text-gray-600 dark:text-gray-300 group-hover:text-litestar-gold">
+                
+    <svg class="h-6 w-6" fill="none"
+     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/>
+</svg>
+
+            </div>
+            <div class="flex-auto">
+                
+    <a href="https://github.com/litestar-org/.github/blob/main/CODE_OF_CONDUCT.md"
+       class="block font-semibold text-gray-900 dark:text-gray-200 hover:text-litestar-gold dark:hover:text-litestar-gold !no-underline select-none cursor-pointer">
+        Code of Conduct
+        <span class="absolute inset-0"></span>
+    </a>
+
+                <div class="mt-1 text-gray-600 dark:text-gray-300">Review the etiquette for interacting with the Litestar community</div>
+            </div>
+        </div>
+    
+
+                
+            </div>
+        </div>
+    </div>
+
+        
+    
+        
+            
+    <div class="relative">
+        <span type="button"
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:!text-litestar-gold st-dropdown-toggle dropdown-closed select-none cursor-pointer"
+                data-dropdown-state="closed"
+                aria-expanded="false">
+            About
+            <div class="menu-state-indicator flex">
+                
+    <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+     aria-hidden="true">
+    <path fill-rule="evenodd"
+          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+          clip-rule="evenodd"/>
+</svg>
+
+            </div>
+        </span>
+
+        <div class="
+            absolute -left-8 top-full z-10 mt-3
+            w-max max-w-md
+            overflow-hidden rounded-3xl
+            bg-white shadow-lg dark:!bg-zinc-700 ring-1 ring-gray-900/5
+            hidden
+            st-dropdown-menu">
+            <div class="p-4">
+                
+                    
+    
+        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-zinc-800">
+            <div class="
+            h-11 w-11 flex flex-none items-center justify-center
+            rounded-lg
+            bg-gray-50 group-hover:bg-white dark:bg-zinc-900 dark:group-hover:bg-zinc-700
+            text-gray-600 dark:text-gray-300 group-hover:text-litestar-gold">
+                
+    <svg class="h-6 w-6" aria-hidden="true"
+     fill="none" stroke="currentColor" stroke-width="1.5"
+     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+          stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+            </div>
+            <div class="flex-auto">
+                
+    <a href="https://litestar.dev/about/organization.html"
+       class="block font-semibold text-gray-900 dark:text-gray-200 hover:text-litestar-gold dark:hover:text-litestar-gold !no-underline select-none cursor-pointer">
+        Litestar Organization
+        <span class="absolute inset-0"></span>
+    </a>
+
+                <div class="mt-1 text-gray-600 dark:text-gray-300">About the Litestar organization</div>
+            </div>
+        </div>
+    
+
+                
+            </div>
+        </div>
+    </div>
+
+        
+    
+
+    </nav>
+</div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/litestar-org/litestar-fullstack" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/litestar" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+    <div class="navbar-persistent--mobile">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+
+
+
+
+    <nav class="hidden lg:flex lg:gap-x-4">
+        
+    
+        
+            <a href="index.html"
+               class="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:!text-litestar-gold select-none cursor-pointer">Documentation</a>
+        
+    
+        
+            
+    <div class="relative">
+        <span type="button"
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:!text-litestar-gold st-dropdown-toggle dropdown-closed select-none cursor-pointer"
+                data-dropdown-state="closed"
+                aria-expanded="false">
+            Community
+            <div class="menu-state-indicator flex">
+                
+    <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+     aria-hidden="true">
+    <path fill-rule="evenodd"
+          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+          clip-rule="evenodd"/>
+</svg>
+
+            </div>
+        </span>
+
+        <div class="
+            absolute -left-8 top-full z-10 mt-3
+            w-max max-w-md
+            overflow-hidden rounded-3xl
+            bg-white shadow-lg dark:!bg-zinc-700 ring-1 ring-gray-900/5
+            hidden
+            st-dropdown-menu">
+            <div class="p-4">
+                
+                    
+    
+        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-zinc-800">
+            <div class="
+            h-11 w-11 flex flex-none items-center justify-center
+            rounded-lg
+            bg-gray-50 group-hover:bg-white dark:bg-zinc-900 dark:group-hover:bg-zinc-700
+            text-gray-600 dark:text-gray-300 group-hover:text-litestar-gold">
+                
+    <svg class="h-6 w-6" fill="none"
+     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"/>
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"/>
+</svg>
+
+            </div>
+            <div class="flex-auto">
+                
+    <a href="contribution-guide.html"
+       class="block font-semibold text-gray-900 dark:text-gray-200 hover:text-litestar-gold dark:hover:text-litestar-gold !no-underline select-none cursor-pointer">
+        Contributing
+        <span class="absolute inset-0"></span>
+    </a>
+
+                <div class="mt-1 text-gray-600 dark:text-gray-300">Learn how to contribute to Litestar Fullstack</div>
+            </div>
+        </div>
+    
+
+                
+                    
+    
+        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-zinc-800">
+            <div class="
+            h-11 w-11 flex flex-none items-center justify-center
+            rounded-lg
+            bg-gray-50 group-hover:bg-white dark:bg-zinc-900 dark:group-hover:bg-zinc-700
+            text-gray-600 dark:text-gray-300 group-hover:text-litestar-gold">
+                
+    <svg class="h-6 w-6" fill="none"
+     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/>
+</svg>
+
+            </div>
+            <div class="flex-auto">
+                
+    <a href="https://github.com/litestar-org/.github/blob/main/CODE_OF_CONDUCT.md"
+       class="block font-semibold text-gray-900 dark:text-gray-200 hover:text-litestar-gold dark:hover:text-litestar-gold !no-underline select-none cursor-pointer">
+        Code of Conduct
+        <span class="absolute inset-0"></span>
+    </a>
+
+                <div class="mt-1 text-gray-600 dark:text-gray-300">Review the etiquette for interacting with the Litestar community</div>
+            </div>
+        </div>
+    
+
+                
+            </div>
+        </div>
+    </div>
+
+        
+    
+        
+            
+    <div class="relative">
+        <span type="button"
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:!text-litestar-gold st-dropdown-toggle dropdown-closed select-none cursor-pointer"
+                data-dropdown-state="closed"
+                aria-expanded="false">
+            About
+            <div class="menu-state-indicator flex">
+                
+    <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+     aria-hidden="true">
+    <path fill-rule="evenodd"
+          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+          clip-rule="evenodd"/>
+</svg>
+
+            </div>
+        </span>
+
+        <div class="
+            absolute -left-8 top-full z-10 mt-3
+            w-max max-w-md
+            overflow-hidden rounded-3xl
+            bg-white shadow-lg dark:!bg-zinc-700 ring-1 ring-gray-900/5
+            hidden
+            st-dropdown-menu">
+            <div class="p-4">
+                
+                    
+    
+        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-zinc-800">
+            <div class="
+            h-11 w-11 flex flex-none items-center justify-center
+            rounded-lg
+            bg-gray-50 group-hover:bg-white dark:bg-zinc-900 dark:group-hover:bg-zinc-700
+            text-gray-600 dark:text-gray-300 group-hover:text-litestar-gold">
+                
+    <svg class="h-6 w-6" aria-hidden="true"
+     fill="none" stroke="currentColor" stroke-width="1.5"
+     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+          stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+            </div>
+            <div class="flex-auto">
+                
+    <a href="https://litestar.dev/about/organization.html"
+       class="block font-semibold text-gray-900 dark:text-gray-200 hover:text-litestar-gold dark:hover:text-litestar-gold !no-underline select-none cursor-pointer">
+        Litestar Organization
+        <span class="absolute inset-0"></span>
+    </a>
+
+                <div class="mt-1 text-gray-600 dark:text-gray-300">About the Litestar organization</div>
+            </div>
+        </div>
+    
+
+                
+            </div>
+        </div>
+    </div>
+
+        
+    
+
+    </nav>
+</div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/litestar-org/litestar-fullstack" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/litestar" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#Symbols"><strong>Symbols</strong></a>
+ | <a href="#_"><strong>_</strong></a>
+ | <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#W"><strong>W</strong></a>
+ 
+</div>
+<h2 id="Symbols">Symbols</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    --app
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-app">app command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --app-dir
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-app-dir">app command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --autogenerate
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-autogenerate">app-database-make-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --branch-label
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-branch-label">app-database-make-migrations command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-branch-label">app-database-merge-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --create-self-signed-cert
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-create-self-signed-cert">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --debug
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-d">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --exclude
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-routes-exclude">app-routes command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --fd
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-F">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --file-descriptor
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-F">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --head
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-head">app-database-make-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --host
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-H">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --message
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-m">app-database-make-migrations command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-m">app-database-merge-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --multidb
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-init-multidb">app-database-init command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --namespace
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-schema-typescript-namespace">app-schema-typescript command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-autogenerate
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-autogenerate">app-database-make-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-prompt
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-downgrade-no-prompt">app-database-downgrade command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-init-no-prompt">app-database-init command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-no-prompt">app-database-make-migrations command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-no-prompt">app-database-merge-migrations command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-no-prompt">app-database-stamp-migration command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-upgrade-no-prompt">app-database-upgrade command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --output
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-schema-openapi-output">app-schema-openapi command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-schema-typescript-output">app-schema-typescript command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --package
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-init-package">app-database-init command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --pdb
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-P">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --port
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-p">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --purge
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-purge">app-database-stamp-migration command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --reload
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-r">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --reload-dir
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-R">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --reload-exclude
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-E">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --reload-include
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-I">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --rev-id
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-rev-id">app-database-make-migrations command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-rev-id">app-database-merge-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --revision
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-revision">app-database-stamp-migration command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    --revisions
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-revisions">app-database-merge-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --schema
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-routes-schema">app-routes command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --short
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-version-s">app-version command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --splice
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-splice">app-database-make-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --sql
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-downgrade-sql">app-database-downgrade command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-sql">app-database-make-migrations command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-sql">app-database-stamp-migration command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-upgrade-sql">app-database-upgrade command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --ssl-certfile
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-ssl-certfile">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --ssl-keyfile
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-ssl-keyfile">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --tag
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-downgrade-tag">app-database-downgrade command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-tag">app-database-stamp-migration command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-upgrade-tag">app-database-upgrade command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --uds
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-U">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --unix-domain-socket
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-U">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --use-pdb
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-P">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --verbose
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-show-current-revision-verbose">app-database-show-current-revision command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --version-path
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-version-path">app-database-make-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --wc
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-W">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --web-concurrency
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-W">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -d
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-d">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -E
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-E">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -F
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-F">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -H
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-H">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -I
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-I">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -m
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-m">app-database-make-migrations command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-m">app-database-merge-migrations command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -P
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-P">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -p
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-p">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -R
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-R">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -r
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-r">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -s
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-version-s">app-version command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -U
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-U">app-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -W
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-W">app-run command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="_">_</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.RoleService.__init__">__init__() (app.domain.accounts.services.RoleService method)</a>
+
+      <ul>
+        <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserService.__init__">(app.domain.accounts.services.UserService method)</a>
+</li>
+        <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamService.__init__">(app.domain.teams.services.TeamService method)</a>
+</li>
+        <li><a href="api/lib/dependencies.html#app.lib.dependencies.BeforeAfter.__init__">(app.lib.dependencies.BeforeAfter method)</a>
+</li>
+        <li><a href="api/lib/dependencies.html#app.lib.dependencies.CollectionFilter.__init__">(app.lib.dependencies.CollectionFilter method)</a>
+</li>
+        <li><a href="api/lib/dependencies.html#app.lib.dependencies.LimitOffset.__init__">(app.lib.dependencies.LimitOffset method)</a>
+</li>
+        <li><a href="api/lib/dependencies.html#app.lib.dependencies.OrderBy.__init__">(app.lib.dependencies.OrderBy method)</a>
+</li>
+        <li><a href="api/lib/dependencies.html#app.lib.dependencies.SearchFilter.__init__">(app.lib.dependencies.SearchFilter method)</a>
+</li>
+        <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig.__init__">(app.lib.dto.DTOConfig method)</a>
+</li>
+        <li><a href="api/lib/exceptions.html#app.lib.exceptions.ApplicationError.__init__">(app.lib.exceptions.ApplicationError method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController">AccessController (class in app.domain.accounts.controllers.access)</a>
+</li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.BeforeAfter.after">after (app.lib.dependencies.BeforeAfter attribute)</a>
+</li>
+      <li><a href="api/lib/exceptions.html#app.lib.exceptions.after_exception_hook_handler">after_exception_hook_handler() (in module app.lib.exceptions)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.after_request">after_request (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.after_request">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.after_request">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.after_request">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.after_request">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.after_request">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.after_request">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.after_response">after_response (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.after_response">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.after_response">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.after_response">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.after_response">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.after_response">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.after_response">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li>
+    app command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-app">--app</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-app-dir">--app-dir</a>
+</li>
+      </ul></li>
+      <li>
+    app-database-downgrade command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-downgrade-no-prompt">--no-prompt</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-downgrade-sql">--sql</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-downgrade-tag">--tag</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-downgrade-arg-REVISION">REVISION</a>
+</li>
+      </ul></li>
+      <li>
+    app-database-init command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-init-multidb">--multidb</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-init-no-prompt">--no-prompt</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-init-package">--package</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-init-arg-DIRECTORY">DIRECTORY</a>
+</li>
+      </ul></li>
+      <li>
+    app-database-make-migrations command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-autogenerate">--autogenerate</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-branch-label">--branch-label</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-head">--head</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-m">--message</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-autogenerate">--no-autogenerate</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-no-prompt">--no-prompt</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-rev-id">--rev-id</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-splice">--splice</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-sql">--sql</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-version-path">--version-path</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-make-migrations-m">-m</a>
+</li>
+      </ul></li>
+      <li>
+    app-database-merge-migrations command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-branch-label">--branch-label</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-m">--message</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-no-prompt">--no-prompt</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-rev-id">--rev-id</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-revisions">--revisions</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-merge-migrations-m">-m</a>
+</li>
+      </ul></li>
+      <li>
+    app-database-show-current-revision command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-show-current-revision-verbose">--verbose</a>
+</li>
+      </ul></li>
+      <li>
+    app-database-stamp-migration command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-no-prompt">--no-prompt</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-purge">--purge</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-revision">--revision</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-sql">--sql</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-stamp-migration-tag">--tag</a>
+</li>
+      </ul></li>
+      <li>
+    app-database-upgrade command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-upgrade-no-prompt">--no-prompt</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-upgrade-sql">--sql</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-upgrade-tag">--tag</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-upgrade-arg-REVISION">REVISION</a>
+</li>
+      </ul></li>
+      <li>
+    app-routes command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-routes-exclude">--exclude</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-routes-schema">--schema</a>
+</li>
+      </ul></li>
+      <li>
+    app-run command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-run-create-self-signed-cert">--create-self-signed-cert</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-d">--debug</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-F">--fd</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-F">--file-descriptor</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-H">--host</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-P">--pdb</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-p">--port</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-r">--reload</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-R">--reload-dir</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-E">--reload-exclude</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-I">--reload-include</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-ssl-certfile">--ssl-certfile</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-ssl-keyfile">--ssl-keyfile</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-U">--uds</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-U">--unix-domain-socket</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-P">--use-pdb</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-W">--wc</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-W">--web-concurrency</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-d">-d</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-E">-E</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-F">-F</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-H">-H</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-I">-I</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-p">-p</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-P">-P</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-r">-r</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-R">-R</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-U">-U</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-run-W">-W</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    app-schema-openapi command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-schema-openapi-output">--output</a>
+</li>
+      </ul></li>
+      <li>
+    app-schema-typescript command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-schema-typescript-namespace">--namespace</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-schema-typescript-output">--output</a>
+</li>
+      </ul></li>
+      <li>
+    app-sessions-delete command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-sessions-delete-arg-SESSION_ID">SESSION_ID</a>
+</li>
+      </ul></li>
+      <li>
+    app-version command line option
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-version-s">--short</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-version-s">-s</a>
+</li>
+      </ul></li>
+      <li>
+    app.asgi
+
+      <ul>
+        <li><a href="api/asgi.html#module-app.asgi">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.accounts.controllers.access
+
+      <ul>
+        <li><a href="api/domain/accounts/controllers/access.html#module-app.domain.accounts.controllers.access">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.accounts.dependencies
+
+      <ul>
+        <li><a href="api/domain/accounts/dependencies.html#module-app.domain.accounts.dependencies">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.accounts.guards
+
+      <ul>
+        <li><a href="api/domain/accounts/guards.html#module-app.domain.accounts.guards">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.accounts.services
+
+      <ul>
+        <li><a href="api/domain/accounts/services.html#module-app.domain.accounts.services">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.system.controllers
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#module-app.domain.system.controllers">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.system.tasks
+
+      <ul>
+        <li><a href="api/domain/system/tasks.html#module-app.domain.system.tasks">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.tags.controllers
+
+      <ul>
+        <li><a href="api/domain/tags/controllers.html#module-app.domain.tags.controllers">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.tags.dependencies
+
+      <ul>
+        <li><a href="api/domain/tags/dependencies.html#module-app.domain.tags.dependencies">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.tags.dtos
+
+      <ul>
+        <li><a href="api/domain/tags/dtos.html#module-app.domain.tags.dtos">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.tags.services
+
+      <ul>
+        <li><a href="api/domain/tags/services.html#module-app.domain.tags.services">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.teams.controllers.team_invitation
+
+      <ul>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#module-app.domain.teams.controllers.team_invitation">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.teams.controllers.team_member
+
+      <ul>
+        <li><a href="api/domain/teams/controllers/team_member.html#module-app.domain.teams.controllers.team_member">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.teams.controllers.teams
+
+      <ul>
+        <li><a href="api/domain/teams/controllers/teams.html#module-app.domain.teams.controllers.teams">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.teams.dependencies
+
+      <ul>
+        <li><a href="api/domain/teams/dependencies.html#module-app.domain.teams.dependencies">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.teams.guards
+
+      <ul>
+        <li><a href="api/domain/teams/guards.html#module-app.domain.teams.guards">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.teams.services
+
+      <ul>
+        <li><a href="api/domain/teams/services.html#module-app.domain.teams.services">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.domain.web.controllers
+
+      <ul>
+        <li><a href="api/domain/web/controllers.html#module-app.domain.web.controllers">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.lib.crypt
+
+      <ul>
+        <li><a href="api/lib/crypt.html#module-app.lib.crypt">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.lib.dependencies
+
+      <ul>
+        <li><a href="api/lib/dependencies.html#module-app.lib.dependencies">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.lib.dto
+
+      <ul>
+        <li><a href="api/lib/dto.html#module-app.lib.dto">module</a>
+</li>
+      </ul></li>
+      <li>
+    app.lib.exceptions
+
+      <ul>
+        <li><a href="api/lib/exceptions.html#module-app.lib.exceptions">module</a>
+</li>
+      </ul></li>
+      <li><a href="api/lib/exceptions.html#app.lib.exceptions.ApplicationError">ApplicationError</a>
+</li>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserService.authenticate">authenticate() (app.domain.accounts.services.UserService method)</a>
+</li>
+      <li><a href="api/lib/exceptions.html#app.lib.exceptions.AuthorizationError">AuthorizationError</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.BeforeAfter.before">before (app.lib.dependencies.BeforeAfter attribute)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.before_request">before_request (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.before_request">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.before_request">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.before_request">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.before_request">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.before_request">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.before_request">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.BeforeAfter">BeforeAfter (class in app.lib.dependencies)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.cache_control">cache_control (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.cache_control">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.cache_control">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.cache_control">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.cache_control">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.cache_control">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.cache_control">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.CollectionFilter">CollectionFilter (class in app.lib.dependencies)</a>
+</li>
+      <li><a href="api/domain/tags/dtos.html#app.domain.tags.dtos.TagCreateDTO.config">config (app.domain.tags.dtos.TagCreateDTO attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/tags/dtos.html#app.domain.tags.dtos.TagDTO.config">(app.domain.tags.dtos.TagDTO attribute)</a>
+</li>
+        <li><a href="api/domain/tags/dtos.html#app.domain.tags.dtos.TagUpdateDTO.config">(app.domain.tags.dtos.TagUpdateDTO attribute)</a>
+</li>
+        <li><a href="api/lib/dto.html#app.lib.dto.SQLAlchemyDTO.config">(app.lib.dto.SQLAlchemyDTO attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dto.html#app.lib.dto.config">config() (in module app.lib.dto)</a>
+</li>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserService.create">create() (app.domain.accounts.services.UserService method)</a>
+
+      <ul>
+        <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamService.create">(app.domain.teams.services.TeamService method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/asgi.html#app.asgi.create_app">create_app() (in module app.asgi)</a>
+</li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.create_collection_dependencies">create_collection_dependencies() (in module app.lib.dependencies)</a>
+</li>
+      <li><a href="api/domain/accounts/guards.html#app.domain.accounts.guards.current_user_from_token">current_user_from_token() (in module app.domain.accounts.guards)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dto.html#app.lib.dto.DataclassDTO">DataclassDTO (class in app.lib.dto)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.dependencies">dependencies (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.dependencies">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.dependencies">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.dependencies">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.dependencies">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.dependencies">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.dependencies">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/lib/dto.html#app.lib.dto.DataclassDTO.detect_nested_field">detect_nested_field() (app.lib.dto.DataclassDTO class method)</a>
+
+      <ul>
+        <li><a href="api/lib/dto.html#app.lib.dto.SQLAlchemyDTO.detect_nested_field">(app.lib.dto.SQLAlchemyDTO class method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    DIRECTORY
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-init-arg-DIRECTORY">app-database-init command line option</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.dto">dto (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.dto">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.dto">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.dto">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.dto">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.dto">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.dto">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/lib/dto.html#app.lib.dto.dto_field">dto_field() (in module app.lib.dto)</a>
+</li>
+      <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig">DTOConfig (class in app.lib.dto)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.etag">etag (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.etag">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.etag">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.etag">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.etag">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.etag">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.etag">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.exception_handlers">exception_handlers (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.exception_handlers">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.exception_handlers">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.exception_handlers">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.exception_handlers">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.exception_handlers">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.exception_handlers">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig.exclude">exclude (app.lib.dto.DTOConfig attribute)</a>
+</li>
+      <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig.experimental_codegen_backend">experimental_codegen_backend (app.lib.dto.DTOConfig attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.BeforeAfter.field_name">field_name (app.lib.dependencies.BeforeAfter attribute)</a>
+
+      <ul>
+        <li><a href="api/lib/dependencies.html#app.lib.dependencies.CollectionFilter.field_name">(app.lib.dependencies.CollectionFilter attribute)</a>
+</li>
+        <li><a href="api/lib/dependencies.html#app.lib.dependencies.OrderBy.field_name">(app.lib.dependencies.OrderBy attribute)</a>
+</li>
+        <li><a href="api/lib/dependencies.html#app.lib.dependencies.SearchFilter.field_name">(app.lib.dependencies.SearchFilter attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dto.html#app.lib.dto.DataclassDTO.generate_field_definitions">generate_field_definitions() (app.lib.dto.DataclassDTO class method)</a>
+
+      <ul>
+        <li><a href="api/lib/dto.html#app.lib.dto.SQLAlchemyDTO.generate_field_definitions">(app.lib.dto.SQLAlchemyDTO class method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/lib/crypt.html#app.lib.crypt.get_encryption_key">get_encryption_key() (in module app.lib.crypt)</a>
+</li>
+      <li><a href="api/lib/crypt.html#app.lib.crypt.get_password_hash">get_password_hash() (in module app.lib.crypt)</a>
+</li>
+      <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamService.get_user_teams">get_user_teams() (app.domain.teams.services.TeamService method)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.guards">guards (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.guards">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.guards">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.guards">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.guards">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.guards">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.guards">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/exceptions.html#app.lib.exceptions.HealthCheckConfigurationError">HealthCheckConfigurationError</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.SearchFilter.ignore_case">ignore_case (app.lib.dependencies.SearchFilter attribute)</a>
+</li>
+      <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig.include">include (app.lib.dto.DTOConfig attribute)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.include_in_schema">include_in_schema (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.include_in_schema">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.include_in_schema">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.include_in_schema">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.include_in_schema">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.include_in_schema">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.include_in_schema">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.LimitOffset.limit">limit (app.lib.dependencies.LimitOffset attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.LimitOffset">LimitOffset (class in app.lib.dependencies)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig.max_nested_depth">max_nested_depth (app.lib.dto.DTOConfig attribute)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.middleware">middleware (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.middleware">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.middleware">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.middleware">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.middleware">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.middleware">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.middleware">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li>
+    module
+
+      <ul>
+        <li><a href="api/asgi.html#module-app.asgi">app.asgi</a>
+</li>
+        <li><a href="api/domain/accounts/controllers/access.html#module-app.domain.accounts.controllers.access">app.domain.accounts.controllers.access</a>
+</li>
+        <li><a href="api/domain/accounts/dependencies.html#module-app.domain.accounts.dependencies">app.domain.accounts.dependencies</a>
+</li>
+        <li><a href="api/domain/accounts/guards.html#module-app.domain.accounts.guards">app.domain.accounts.guards</a>
+</li>
+        <li><a href="api/domain/accounts/services.html#module-app.domain.accounts.services">app.domain.accounts.services</a>
+</li>
+        <li><a href="api/domain/system/controllers.html#module-app.domain.system.controllers">app.domain.system.controllers</a>
+</li>
+        <li><a href="api/domain/system/tasks.html#module-app.domain.system.tasks">app.domain.system.tasks</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#module-app.domain.tags.controllers">app.domain.tags.controllers</a>
+</li>
+        <li><a href="api/domain/tags/dependencies.html#module-app.domain.tags.dependencies">app.domain.tags.dependencies</a>
+</li>
+        <li><a href="api/domain/tags/dtos.html#module-app.domain.tags.dtos">app.domain.tags.dtos</a>
+</li>
+        <li><a href="api/domain/tags/services.html#module-app.domain.tags.services">app.domain.tags.services</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#module-app.domain.teams.controllers.team_invitation">app.domain.teams.controllers.team_invitation</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#module-app.domain.teams.controllers.team_member">app.domain.teams.controllers.team_member</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#module-app.domain.teams.controllers.teams">app.domain.teams.controllers.teams</a>
+</li>
+        <li><a href="api/domain/teams/dependencies.html#module-app.domain.teams.dependencies">app.domain.teams.dependencies</a>
+</li>
+        <li><a href="api/domain/teams/guards.html#module-app.domain.teams.guards">app.domain.teams.guards</a>
+</li>
+        <li><a href="api/domain/teams/services.html#module-app.domain.teams.services">app.domain.teams.services</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#module-app.domain.web.controllers">app.domain.web.controllers</a>
+</li>
+        <li><a href="api/lib/crypt.html#module-app.lib.crypt">app.lib.crypt</a>
+</li>
+        <li><a href="api/lib/dependencies.html#module-app.lib.dependencies">app.lib.dependencies</a>
+</li>
+        <li><a href="api/lib/dto.html#module-app.lib.dto">app.lib.dto</a>
+</li>
+        <li><a href="api/lib/exceptions.html#module-app.lib.exceptions">app.lib.exceptions</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.LimitOffset.offset">offset (app.lib.dependencies.LimitOffset attribute)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.opt">opt (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.opt">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.opt">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.opt">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.opt">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.opt">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.opt">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.OrderBy">OrderBy (class in app.lib.dependencies)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.owner">owner (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.owner">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.owner">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.owner">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.owner">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.owner">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.owner">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.parameters">parameters (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.parameters">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.parameters">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.parameters">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.parameters">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.parameters">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.parameters">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig.partial">partial (app.lib.dto.DTOConfig attribute)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.path">path (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.path">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.path">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.path">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.path">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.path">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.path">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.provide_created_filter">provide_created_filter() (in module app.lib.dependencies)</a>
+</li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.provide_filter_dependencies">provide_filter_dependencies() (in module app.lib.dependencies)</a>
+</li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.provide_id_filter">provide_id_filter() (in module app.lib.dependencies)</a>
+</li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.provide_limit_offset_pagination">provide_limit_offset_pagination() (in module app.lib.dependencies)</a>
+</li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.provide_order_by">provide_order_by() (in module app.lib.dependencies)</a>
+</li>
+      <li><a href="api/domain/accounts/dependencies.html#app.domain.accounts.dependencies.provide_roles_service">provide_roles_service() (in module app.domain.accounts.dependencies)</a>
+</li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.provide_search_filter">provide_search_filter() (in module app.lib.dependencies)</a>
+</li>
+      <li><a href="api/domain/tags/dependencies.html#app.domain.tags.dependencies.provide_tags_service">provide_tags_service() (in module app.domain.tags.dependencies)</a>
+</li>
+      <li><a href="api/domain/teams/dependencies.html#app.domain.teams.dependencies.provide_team_invitations_service">provide_team_invitations_service() (in module app.domain.teams.dependencies)</a>
+</li>
+      <li><a href="api/domain/teams/dependencies.html#app.domain.teams.dependencies.provide_team_members_service">provide_team_members_service() (in module app.domain.teams.dependencies)</a>
+</li>
+      <li><a href="api/domain/teams/dependencies.html#app.domain.teams.dependencies.provide_teams_service">provide_teams_service() (in module app.domain.teams.dependencies)</a>
+</li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.provide_updated_filter">provide_updated_filter() (in module app.lib.dependencies)</a>
+</li>
+      <li><a href="api/domain/accounts/dependencies.html#app.domain.accounts.dependencies.provide_user">provide_user() (in module app.domain.accounts.dependencies)</a>
+</li>
+      <li><a href="api/domain/accounts/dependencies.html#app.domain.accounts.dependencies.provide_user_roles_service">provide_user_roles_service() (in module app.domain.accounts.dependencies)</a>
+</li>
+      <li><a href="api/domain/accounts/dependencies.html#app.domain.accounts.dependencies.provide_users_service">provide_users_service() (in module app.domain.accounts.dependencies)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig.rename_fields">rename_fields (app.lib.dto.DTOConfig attribute)</a>
+</li>
+      <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig.rename_strategy">rename_strategy (app.lib.dto.DTOConfig attribute)</a>
+</li>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.RoleService.repository_type">repository_type (app.domain.accounts.services.RoleService attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserRoleService.repository_type">(app.domain.accounts.services.UserRoleService attribute)</a>
+</li>
+        <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserService.repository_type">(app.domain.accounts.services.UserService attribute)</a>
+</li>
+        <li><a href="api/domain/tags/services.html#app.domain.tags.services.TagService.repository_type">(app.domain.tags.services.TagService attribute)</a>
+</li>
+        <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamInvitationService.repository_type">(app.domain.teams.services.TeamInvitationService attribute)</a>
+</li>
+        <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamMemberService.repository_type">(app.domain.teams.services.TeamMemberService attribute)</a>
+</li>
+        <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamService.repository_type">(app.domain.teams.services.TeamService attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.request_class">request_class (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.request_class">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.request_class">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.request_class">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.request_class">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.request_class">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.request_class">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/guards.html#app.domain.accounts.guards.requires_active_user">requires_active_user() (in module app.domain.accounts.guards)</a>
+</li>
+      <li><a href="api/domain/accounts/guards.html#app.domain.accounts.guards.requires_superuser">requires_superuser() (in module app.domain.accounts.guards)</a>
+</li>
+      <li><a href="api/domain/teams/guards.html#app.domain.teams.guards.requires_team_admin">requires_team_admin() (in module app.domain.teams.guards)</a>
+</li>
+      <li><a href="api/domain/teams/guards.html#app.domain.teams.guards.requires_team_membership">requires_team_membership() (in module app.domain.teams.guards)</a>
+</li>
+      <li><a href="api/domain/teams/guards.html#app.domain.teams.guards.requires_team_ownership">requires_team_ownership() (in module app.domain.teams.guards)</a>
+</li>
+      <li><a href="api/domain/accounts/guards.html#app.domain.accounts.guards.requires_verified_user">requires_verified_user() (in module app.domain.accounts.guards)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.response_class">response_class (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.response_class">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.response_class">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.response_class">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.response_class">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.response_class">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.response_class">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.response_cookies">response_cookies (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.response_cookies">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.response_cookies">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.response_cookies">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.response_cookies">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.response_cookies">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.response_cookies">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.response_headers">response_headers (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.response_headers">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.response_headers">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.response_headers">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.response_headers">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.response_headers">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.response_headers">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.return_dto">return_dto (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.return_dto">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.return_dto">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.return_dto">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.return_dto">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.return_dto">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.return_dto">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li>
+    REVISION
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-database-downgrade-arg-REVISION">app-database-downgrade command line option</a>
+</li>
+        <li><a href="api/cli.html#cmdoption-app-database-upgrade-arg-REVISION">app-database-upgrade command line option</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.RoleService">RoleService (class in app.domain.accounts.services)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.SearchFilter">SearchFilter (class in app.lib.dependencies)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.security">security (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.security">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.security">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.security">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.security">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.security">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.security">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li>
+    SESSION_ID
+
+      <ul>
+        <li><a href="api/cli.html#cmdoption-app-sessions-delete-arg-SESSION_ID">app-sessions-delete command line option</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.signature_namespace">signature_namespace (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.signature_namespace">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.signature_namespace">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.signature_namespace">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.signature_namespace">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.signature_namespace">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.signature_namespace">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.signature_types">signature_types (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.signature_types">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.signature_types">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.signature_types">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.signature_types">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.signature_types">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.signature_types">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.OrderBy.sort_order">sort_order (app.lib.dependencies.OrderBy attribute)</a>
+</li>
+      <li><a href="api/lib/dto.html#app.lib.dto.SQLAlchemyDTO">SQLAlchemyDTO (class in app.lib.dto)</a>
+</li>
+      <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController">SystemController (class in app.domain.system.controllers)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController">TagController (class in app.domain.tags.controllers)</a>
+</li>
+      <li><a href="api/domain/tags/dtos.html#app.domain.tags.dtos.TagCreateDTO">TagCreateDTO (class in app.domain.tags.dtos)</a>
+</li>
+      <li><a href="api/domain/tags/dtos.html#app.domain.tags.dtos.TagDTO">TagDTO (class in app.domain.tags.dtos)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.tags">tags (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.tags">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.tags">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.tags">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.tags">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.tags">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.tags">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/tags/services.html#app.domain.tags.services.TagService">TagService (class in app.domain.tags.services)</a>
+</li>
+      <li><a href="api/domain/tags/dtos.html#app.domain.tags.dtos.TagUpdateDTO">TagUpdateDTO (class in app.domain.tags.dtos)</a>
+</li>
+      <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController">TeamController (class in app.domain.teams.controllers.teams)</a>
+</li>
+      <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController">TeamInvitationController (class in app.domain.teams.controllers.team_invitation)</a>
+</li>
+      <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamInvitationService">TeamInvitationService (class in app.domain.teams.services)</a>
+</li>
+      <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController">TeamMemberController (class in app.domain.teams.controllers.team_member)</a>
+</li>
+      <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamMemberService">TeamMemberService (class in app.domain.teams.services)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamService">TeamService (class in app.domain.teams.services)</a>
+</li>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.RoleService.to_model">to_model() (app.domain.accounts.services.RoleService method)</a>
+
+      <ul>
+        <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserService.to_model">(app.domain.accounts.services.UserService method)</a>
+</li>
+        <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamService.to_model">(app.domain.teams.services.TeamService method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.type_decoders">type_decoders (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.type_decoders">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.type_decoders">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.type_decoders">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.type_decoders">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.type_decoders">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.type_decoders">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.type_encoders">type_encoders (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.type_encoders">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.type_encoders">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.type_encoders">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.type_encoders">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.type_encoders">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.type_encoders">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dto.html#app.lib.dto.DTOConfig.underscore_fields_private">underscore_fields_private (app.lib.dto.DTOConfig attribute)</a>
+</li>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserService.update">update() (app.domain.accounts.services.UserService method)</a>
+
+      <ul>
+        <li><a href="api/domain/teams/services.html#app.domain.teams.services.TeamService.update">(app.domain.teams.services.TeamService method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserService.update_password">update_password() (app.domain.accounts.services.UserService method)</a>
+</li>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserRoleService">UserRoleService (class in app.domain.accounts.services)</a>
+</li>
+      <li><a href="api/domain/accounts/services.html#app.domain.accounts.services.UserService">UserService (class in app.domain.accounts.services)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.SearchFilter.value">value (app.lib.dependencies.SearchFilter attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/lib/dependencies.html#app.lib.dependencies.CollectionFilter.values">values (app.lib.dependencies.CollectionFilter attribute)</a>
+</li>
+      <li><a href="api/lib/crypt.html#app.lib.crypt.verify_password">verify_password() (in module app.lib.crypt)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController">WebController (class in app.domain.web.controllers)</a>
+</li>
+      <li><a href="api/domain/accounts/controllers/access.html#app.domain.accounts.controllers.access.AccessController.websocket_class">websocket_class (app.domain.accounts.controllers.access.AccessController attribute)</a>
+
+      <ul>
+        <li><a href="api/domain/system/controllers.html#app.domain.system.controllers.SystemController.websocket_class">(app.domain.system.controllers.SystemController attribute)</a>
+</li>
+        <li><a href="api/domain/tags/controllers.html#app.domain.tags.controllers.TagController.websocket_class">(app.domain.tags.controllers.TagController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_invitation.html#app.domain.teams.controllers.team_invitation.TeamInvitationController.websocket_class">(app.domain.teams.controllers.team_invitation.TeamInvitationController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/team_member.html#app.domain.teams.controllers.team_member.TeamMemberController.websocket_class">(app.domain.teams.controllers.team_member.TeamMemberController attribute)</a>
+</li>
+        <li><a href="api/domain/teams/controllers/teams.html#app.domain.teams.controllers.teams.TeamController.websocket_class">(app.domain.teams.controllers.teams.TeamController attribute)</a>
+</li>
+        <li><a href="api/domain/web/controllers.html#app.domain.web.controllers.WebController.websocket_class">(app.domain.web.controllers.WebController attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2023, Litestar Organization.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
